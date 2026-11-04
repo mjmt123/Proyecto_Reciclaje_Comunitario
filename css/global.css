@@ -1,0 +1,68 @@
+/* global.css - Estilos compartidos del proyecto (colores, tipografía,
+   botones y formularios). Se carga después de Bootstrap. */
+:root {
+  --verde-900: #14382a;
+  --verde-700: #1f5a41;
+  --verde-100: #dcefe3;
+  --punto: #f2b134;
+  --tinta: #16241c;
+  --fondo: #f1f5f2;
+  --borde: #d3dfd7;
+}
+body { background: var(--fondo); color: var(--tinta); font-family: "Segoe UI", system-ui, sans-serif; }
+h1, h2, h3 { color: var(--verde-900); font-weight: 700; }
+a { color: var(--verde-700); }
+
+
+
+
+
+/* Botones */
+.btn-primary {
+  --bs-btn-bg: var(--verde-700); --bs-btn-border-color: var(--verde-700);
+  --bs-btn-hover-bg: var(--verde-900); --bs-btn-hover-border-color: var(--verde-900);
+  --bs-btn-active-bg: var(--verde-900); --bs-btn-active-border-color: var(--verde-900);
+  --bs-btn-disabled-bg: var(--verde-700); --bs-btn-disabled-border-color: var(--verde-700);
+}
+.btn-warning {
+  --bs-btn-bg: var(--punto); --bs-btn-border-color: var(--punto); --bs-btn-color: #2b1d00;
+  --bs-btn-hover-bg: #e2a11f; --bs-btn-hover-border-color: #e2a11f; --bs-btn-hover-color: #2b1d00;
+  --bs-btn-disabled-bg: #e9d9b5; --bs-btn-disabled-border-color: #e9d9b5; --bs-btn-disabled-color: #6b5a30;
+}
+
+
+
+
+
+/* Formularios */
+.form-label { font-weight: 600; }
+.form-control:focus, .form-select:focus {
+  border-color: var(--verde-700); box-shadow: 0 0 0 .2rem rgba(31, 90, 65, .25);
+}
+.form-check-input:checked { background-color: var(--verde-700); border-color: var(--verde-700); }
+input[type="number"], input[type="date"] { max-width: 100%; }
+
+
+
+
+
+/* Tarjetas */
+.card { border-color: var(--borde); border-radius: 14px; }
+
+
+
+
+
+/* Encabezado y menú (flexbox) */
+.encabezado { background: var(--verde-900); }
+.encabezado .container {
+  display: flex; flex-wrap: wrap; justify-content: space-between;
+  align-items: center; gap: .5rem 1rem; padding-top: .8rem; padding-bottom: .8rem;
+}
+.logo { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+.menu { display: flex; flex-wrap: wrap; gap: .25rem; }
+.menu a { color: #d6e8dd; text-decoration: none; padding: .4rem .8rem; border-radius: 999px; }
+.menu a:hover { background: rgba(255, 255, 255, .12); color: #fff; }
+.menu a[aria-current="page"] { background: var(--punto); color: #2b1d00; }
+
+.pie { text-align: center; color: #54655b; font-size: .875rem; padding: 1.5rem 1rem 2rem; }

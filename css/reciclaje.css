@@ -1,0 +1,13 @@
+.numero { font-size: 3.2rem; font-weight: 700; line-height: 1; color: var(--punto); margin: .25rem 0 .75rem; }
+.numero-chico { font-size: 1.8rem; font-weight: 700; color: var(--verde-900); margin: 0; }
+.puntos, .saldo { background: var(--verde-900); color: #fff; border-color: var(--verde-900); }
+.puntos h2 { color: #fff; }
+.saldo .numero { font-size: 4rem; }
+.lista-simple { list-style: none; padding: 0; margin: 0; }
+.puntos .lista-simple li { border-top: 1px solid rgba(255, 255, 255, .2); padding: .3rem 0; font-size: .9rem; }
+section .lista-simple li { border-bottom: 1px solid var(--borde); padding: .6rem 0; }
+.pts { display: inline-block; background: #fdf0cf; color: #8a5a00; font-weight: 700; border-radius: 999px; padding: .1rem .7rem; }
+.icono { font-size: 3rem; line-height: 1; margin-bottom: .5rem; }
+.progreso { height: 12px; background: var(--verde-100); border-radius: 999px; overflow: hidden; margin: .5rem 0; }
+.progreso div { height: 100%; width: 0; background: var(--verde-700); }
+.codigo { font-family: monospace; font-size: 1.6rem; font-weight: 700; letter-spacing: .1em; }
