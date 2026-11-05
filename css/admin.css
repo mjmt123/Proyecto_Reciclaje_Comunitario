@@ -1,0 +1,9 @@
+/* admin.css - Estilos del Módulo 4 (Administración) */
+.numero-chico { font-size: 2rem; font-weight: 700; color: var(--verde-900); margin: 0; }
+.lista-simple { list-style: none; padding: 0; margin: 0; }
+.lista-simple li {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 1rem; border-bottom: 1px solid var(--borde); padding: .6rem 0;
+}
+.lista-simple li:last-child { border-bottom: 0; }
+.pts { display: inline-block; background: #fdf0cf; color: #8a5a00; font-weight: 700; border-radius: 999px; padding: .1rem .7rem; }

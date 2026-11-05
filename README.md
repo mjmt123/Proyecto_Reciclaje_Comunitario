@@ -31,6 +31,7 @@ HTML5, CSS3, JavaScript, PHP y MySQL (en esta entrega: Front End).
 | Ashly Segura Quiros | Administración |
 | María de Jesús Morales Toruño | Centros de acopio |
 | Ashly Segura Quiros | Reciclaje y puntos |
+-Los otros dos compañeros se excluyeron de este avance ya que no hicieron ningún aporte.
 
 - Los otros 2 compañeros se sacaron de este avance ya que no aportaron nada.
 
