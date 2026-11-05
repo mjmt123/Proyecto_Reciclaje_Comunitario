@@ -1,0 +1,7 @@
+/* centros.css - Estilos del módulo de centros de acopio */
+.zona { color: #8a5a00; font-weight: 700; }
+.etiqueta {
+  display: inline-block; background: var(--verde-100); color: var(--verde-900);
+  border-radius: 999px; padding: .1rem .7rem; font-size: .82rem; margin: 0 .3rem .3rem 0;
+}
+.etiqueta--ok { background: #d6ecd0; font-weight: 700; }
