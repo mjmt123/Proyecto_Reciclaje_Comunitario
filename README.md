@@ -28,9 +28,11 @@ HTML5, CSS3, JavaScript, PHP y MySQL (en esta entrega: Front End).
 | Integrante | Módulo |
 |---|---|
 | María de Jesús Morales Toruño | Gestión de usuarios |
-| Diego Ramirez Martinez | Administración |
-| Jose Rodriguez Alvarado | Centros de acopio |
+| Ashly Segura Quiros | Administración |
+| María de Jesús Morales Toruño | Centros de acopio |
 | Ashly Segura Quiros | Reciclaje y puntos |
+
+- Los otros 2 compañeros se sacaron de este avance ya que no aportaron nada.
 
 ## Forma de trabajo
 
