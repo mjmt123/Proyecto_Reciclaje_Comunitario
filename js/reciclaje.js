@@ -1,5 +1,5 @@
 var CLAVES = ["papel", "carton", "plastico", "vidrio", "aluminio", "tetrapak"];
-var CENTROS = ["Centro de copiado Central", "Centro de copiado Universidad", "Centro de copiado Plaza Norte"];
+var CENTROS = ["Centro de acopio Central", "Centro de acopio Universidad", "Centro de acopio Plaza Norte"];
 var CATEGORIAS = ["comida", "papeleria", "hogar"];
 var RECOMPENSAS = [
   { id: 1, icono: "☕", nombre: "Café americano gratis", comercio: "Soda La Esquina", categoria: "comida", costo: 120,
