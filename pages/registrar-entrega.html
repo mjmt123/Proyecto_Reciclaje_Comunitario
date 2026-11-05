@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar entrega - Reciclaje Comunitario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/reciclaje.css">
+</head>
+<body id="pagina-registrar">
+  <header class="encabezado">
+    <div class="container">
+      <a class="logo" href="../index.html">Reciclaje Comunitario</a>
+      <nav class="menu">
+        <a href="registrar-entrega.html" aria-current="page">Registrar entrega</a>
+        <a href="historial-entregas.html">Historial</a>
+        <a href="mis-puntos.html">Mis puntos</a>
+        <a href="catalogo-recompensas.html">Recompensas</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container py-4">
+    <h1>Registrar entrega de material</h1>
+    <p class="text-muted">Anota lo que entregaste en un centro de copiado y suma puntos.</p>
+    <div id="mensaje"></div>
+    <div class="row g-4">
+      <section class="col-md-7">
+        <form id="formEntrega" class="card card-body" action="#" method="post">
+          <div class="mb-3">
+            <label for="material" class="form-label">Tipo de material</label>
+            <select id="material" class="form-select" required></select>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label for="peso" class="form-label">Peso (kg)</label>
+              <input type="number" id="peso" class="form-control" min="0.1" max="500" step="0.1" placeholder="Ej. 2.5" required>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label for="fecha" class="form-label">Fecha de entrega</label>
+              <input type="date" id="fecha" class="form-control" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="centro" class="form-label">Centro de copiado</label>
+            <select id="centro" class="form-select" required></select>
+          </div>
+          <div class="mb-3">
+            <label for="notas" class="form-label">Notas (opcional)</label>
+            <textarea id="notas" class="form-control" rows="3" maxlength="200"></textarea>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="confirmo">
+            <label class="form-check-label" for="confirmo">Confirmo que los datos son correctos</label>
+          </div>
+          <button type="button" id="btnRegistrar" class="btn btn-primary">Registrar entrega</button>
+        </form>
+      </section>
+      <aside class="col-md-5">
+        <div class="card card-body puntos">
+          <h2 class="h5">Puntos de esta entrega</h2>
+          <p class="numero" id="vistaPuntos">0</p>
+          <ul id="tarifas" class="lista-simple"></ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="pie">Proyecto SC-502, Universidad Fidelitas</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/reciclaje.js"></script>
+</body>
+</html>
