@@ -1,0 +1,10 @@
+/* usuarios.css - Estilos del módulo de gestión de usuarios */
+.portada {
+  background: var(--verde-900);
+  color: #fff;
+  border-radius: 14px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.portada h1 { color: #fff; }
+.portada p { color: #d6e8dd; }
