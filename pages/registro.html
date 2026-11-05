@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta - Reciclaje Comunitario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body id="pagina-registro">
+  <header class="encabezado">
+    <div class="container">
+      <a class="logo" href="../index.html">Reciclaje Comunitario</a>
+      <nav class="menu">
+        <a href="registrar-entrega.html">Registrar entrega</a>
+        <a href="historial-entregas.html">Historial</a>
+        <a href="mis-puntos.html">Mis puntos</a>
+        <a href="catalogo-recompensas.html">Recompensas</a>
+        <a href="editar-perfil.html">Mi perfil</a>
+        <a href="login.html">Ingresar</a>
+        <a href="registro.html" aria-current="page">Registrarse</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container py-4">
+    <div class="row justify-content-center">
+      <section class="col-md-9 col-lg-7">
+        <h1>Crear cuenta</h1>
+        <p class="text-muted">Regístrate para acumular puntos por tus entregas de material reciclable.</p>
+        <div id="mensaje"></div>
+        <form id="formRegistro" class="card card-body" action="#" method="post" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" id="nombre" class="form-control" maxlength="80" placeholder="Ej. Ana Pérez Mora" autocomplete="name">
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" id="correo" class="form-control" maxlength="100" placeholder="nombre@correo.com" autocomplete="email">
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label for="zona" class="form-label">Zona</label>
+              <select id="zona" class="form-select"></select>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label for="direccion" class="form-label">Dirección (opcional)</label>
+              <input type="text" id="direccion" class="form-control" maxlength="150" autocomplete="street-address">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <label for="clave" class="form-label">Contraseña</label>
+              <input type="password" id="clave" class="form-control" autocomplete="new-password">
+              <div class="form-text">Mínimo 8 caracteres, con letras y números.</div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <label for="clave2" class="form-label">Confirmar contraseña</label>
+              <input type="password" id="clave2" class="form-control" autocomplete="new-password">
+            </div>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="verClave">
+            <label class="form-check-label" for="verClave">Mostrar contraseñas</label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="acepto">
+            <label class="form-check-label" for="acepto">Acepto el uso de mis datos para el programa de reciclaje</label>
+          </div>
+          <button type="submit" id="btnRegistro" class="btn btn-primary">Crear cuenta</button>
+          <p class="mt-3 mb-0">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer class="pie">Proyecto SC-502, Universidad Fidelitas</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/usuarios.js"></script>
+</body>
+</html>
